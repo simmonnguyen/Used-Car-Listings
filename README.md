@@ -6,7 +6,9 @@ The CSV file for the project is [used_car_listings.csv](used_car_listings.csv).
 
 The JSON file for the project is [used_car_listings.json](used_car_listings.json).
 
+Price vs Mileage Bar graph using codepen.io [Price vs Mileage](https://github.com/simmonnguyen/Used-Car-Listings/tree/main/Price%20vs%20Mileage%20Codepen).
+
 ## Used Car Value determination by using R
 [Used Car Value Determination](assignment3.R).
 
-Price vs Mileage Bar graph using codepen.io [Price vs Mileage](https://github.com/simmonnguyen/Used-Car-Listings/tree/main/Price%20vs%20Mileage%20Codepen).
+
