@@ -81,6 +81,56 @@ This project focuses on answering questions such as:
 4. Do fuel type, transmission, or condition impact resale value?
 5. How do used car prices vary by location?
 
+## Key Findings
+
+The notebook explored several questions related to used car resale value, depreciation, and pricing trends. Each question was analyzed using cleaned vehicle listing data and visualized with charts from the notebook.
+
+### 1. Which car brands retain their value the best?
+
+This analysis compared car brands using a value retention score based on price, mileage, and vehicle age. Brands with higher value retention scores tend to keep stronger resale value compared to other brands in the dataset.
+
+![Top Car Brands by Value Retention](images/brand_value_retention.png)
+
+**Finding:**  
+The results show that certain car brands retain their value better than others. These brands may have stronger resale demand, better reliability reputation, or lower depreciation compared to brands with lower value retention scores.
+
+---
+
+### 2. How does mileage affect used car price?
+
+This analysis examined the relationship between mileage and used car price. Mileage is one of the most important factors in used car pricing because higher mileage usually means more wear and tear on the vehicle.
+
+![Mileage vs Used Car Price](images/mileage_vs_price.png)
+
+**Finding:**  
+The graph shows that vehicles with lower mileage generally have higher prices, while vehicles with higher mileage tend to have lower prices. This suggests that mileage has a negative relationship with used car price.
+
+---
+
+### 3. How does vehicle age contribute to depreciation?
+
+This analysis looked at how the age of a vehicle affects its average resale price. Vehicle age was calculated by subtracting the car’s model year from the current year.
+
+![Vehicle Age and Depreciation](images/vehicle_age_depreciation.png)
+
+**Finding:**  
+The results show that older vehicles generally have lower average prices. This supports the idea that vehicles depreciate over time as they age, even when other factors such as mileage and condition may also play a role.
+
+---
+
+### 4. Do fuel type, transmission, or condition impact resale value?
+
+This analysis compared average used car prices across fuel type, transmission type, and vehicle condition. These features can affect resale value because buyers may prefer certain vehicle types depending on reliability, fuel efficiency, driving experience, and overall condition.
+
+![Fuel Type Impact on Price](images/fuel_type_price.png)
+
+![Transmission Impact on Price](images/transmission_price.png)
+
+![Condition Impact on Price](images/condition_price.png)
+
+**Finding:**  
+The results show that vehicle characteristics such as fuel type, transmission, and condition can influence used car prices. Cars in better condition usually have higher resale values, while certain fuel or transmission types may also be associated with higher average prices depending on buyer demand.
+
 ## Conclusion
 
 This project provides an overview of the used car market by analyzing important vehicle attributes that influence resale value. Through R analysis, web-based visualizations, and an interactive Plotly Dash dashboard, users can explore how mileage, brand, age, condition, and location affect used car prices.
