@@ -2,14 +2,10 @@ import pandas as pd
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 
-# =========================
 # Load dataset
-# =========================
 df = pd.read_csv("used_car_listings.csv")
 
-# =========================
 # Basic cleaning
-# =========================
 df["price"] = pd.to_numeric(df["price"], errors="coerce")
 df["mileage"] = pd.to_numeric(df["mileage"], errors="coerce")
 df["year"] = pd.to_numeric(df["year"], errors="coerce")
@@ -32,9 +28,8 @@ for col in ["fuel_type", "seller_type", "condition", "transmission", "body_type"
     if col in df.columns:
         df[col] = df[col].fillna("Unknown").astype(str)
 
-# =========================
+
 # Dropdown values
-# =========================
 makes = sorted(df["make"].dropna().unique())
 fuel_types = sorted(df["fuel_type"].dropna().unique())
 seller_types = sorted(df["seller_type"].dropna().unique())
@@ -53,9 +48,8 @@ year_marks = {y: str(y) for y in range(min_year, max_year + 1, year_step)}
 year_marks[min_year] = str(min_year)
 year_marks[max_year] = str(max_year)
 
-# =========================
+
 # App setup
-# =========================
 app = Dash(__name__)
 server = app.server
 
