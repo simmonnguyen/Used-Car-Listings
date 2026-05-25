@@ -15,14 +15,34 @@ This project uses a used car listings dataset that contains vehicle information 
 
 ## Tools and Technologies
 
-The project uses multiple tools to analyze and visualize the used car listing data:
+The project uses multiple tools and technologies to clean, analyze, visualize, and model the used car listings data:
 
-- **R** for data analysis
-- **Python** for dashboard development
-- **Pandas** for data cleaning and transformation
-- **Plotly Dash** for the interactive dashboard
-- **CodePen** for a basic web-based visualization
-- **GitHub** for project documentation and version control
+- **Google Colab** for developing and running the Python notebook in a cloud-based environment
+- **Python** for data cleaning, analysis, visualization, and machine learning
+- **Pandas** for data cleaning, preprocessing, and data transformation
+- **Matplotlib and Seaborn** for exploratory data visualizations
+- **Scikit-learn** for building and evaluating machine learning models
+- **R** for additional used car value analysis
+- **Plotly Dash** for developing the interactive dashboard
+- **CodePen** for creating a basic web-based Price vs Mileage visualization
+- **GitHub** for project documentation, file storage, and version control
+
+## Google Colab Notebook
+
+This project includes a Google Colab notebook that contains the full data cleaning, exploratory data analysis, and machine learning process for the used car listings dataset.
+
+The notebook includes:
+
+- Data loading and Google Colab setup
+- Data cleaning and preprocessing
+- Missing value and duplicate checks
+- Feature creation, including vehicle age and value retention score
+- Exploratory data analysis for used car pricing trends
+- Visualizations for mileage, vehicle age, brand value retention, fuel type, transmission, and condition
+- Machine learning models to predict used car prices
+- Model comparison using Linear Regression and Random Forest Regressor
+
+Notebook Link: [Used Car Listings Analysis Notebook](notebooks/Used_Car_Listings_Analysis.ipynb)
 
 ## R Analysis
 
